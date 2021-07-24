@@ -1,22 +1,27 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import Vue from "vue";
+import Vuex from "vuex";
 
+import { fetchServiceList } from "@/api/service.js";
 
 Vue.use(Vuex);
 
-
 export default new Vuex.Store({
-    state: {
+	state: { servicelist: [] },
 
-    },
+	getters: {},
 
-    getters: {
+	mutations: {
+		fetchStateServiceList(state, data) {
+			return (state.servicelist = data);
+		},
+	},
 
-    },
+	actions: {
+		async StateServiceList({ commit }, searchData) {
+			const data = await fetchServiceList(searchData);
 
-
-    mutations: {
-
-    }
-
+			commit("fetchStateServiceList", data);
+			return data;
+		},
+	},
 });

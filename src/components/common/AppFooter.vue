@@ -1,9 +1,7 @@
 <template>
-  <div class="footer">
+  <div class="footer bottom-fix">
     <div class="inner">
-      <div class="copyright">
-        Copyright (c) SK telecom. All Rights Reserved.
-      </div>
+      <div class="copyright">Copyright (c) - All Rights Reserved.</div>
     </div>
   </div>
 </template>
@@ -12,4 +10,10 @@
 export default {};
 </script>
 
-<style></style>
+<style>
+.bottom-fix {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+</style>

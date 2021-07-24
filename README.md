@@ -1,29 +1,7 @@
 # fe
 
-## Project setup
+## 운영 자산 관련 Toy Project
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+UI 설계서 적용 중
 ```
 
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

@@ -2,28 +2,41 @@
   <div class="header">
     <div class="inner">
       <h1>
-        <a href="#none" title="ETO"><span class="blind">ETO</span></a>
+        <router-link to="/main">
+          <a title="ETO"><span class="blind">ETO</span></a>
+        </router-link>
       </h1>
       <ul class="gnb">
         <li class="gnb01">
-          <a href="#none">서비스 관리</a>
+          <router-link to="/serviceinfo"><a>서비스 관리</a></router-link>
           <div class="gnb_depth">
             <ul>
               <li>
-                <a href="#none">서비스 신규 등록</a>
+                <router-link to="">
+                  <a href="#none">서비스 신규 등록</a></router-link
+                >
               </li>
               <li>
-                <a href="#none">S/W 공통 정보 등록</a>
+                <router-link to="/interface"
+                  ><a href="#none">I/F 리스트</a></router-link
+                >
+              </li>
+              <li>
+                <router-link to="">
+                  <a href="#none">S/W 공통 정보 등록</a>
+                </router-link>
               </li>
             </ul>
           </div>
         </li>
         <li class="gnb02">
-          <a href="#none">FAQ 관리</a>
+          <router-link to="/faq"><a>FAQ 관리</a></router-link>
           <div class="gnb_depth">
             <ul>
               <li>
-                <a href="#none">FAQ 신규 등록</a>
+                <router-link to="">
+                  <a href="#none">FAQ 신규 등록</a>
+                </router-link>
               </li>
             </ul>
           </div>
